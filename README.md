@@ -3,9 +3,7 @@
 三步集成
  1. 控制器中初始化一个helper ;
  
- //
-- (TZImagePickerHelper *)helper
-{
+- (TZImagePickerHelper *)helper {
     if (!_helper) {
         _helper = [[TZImagePickerHelper alloc] init];
         WeakPointer(weakSelf);
@@ -13,7 +11,7 @@
             [weakSelf.imagesURL addObjectsFromArray:array];
             weakSelf.layout.itemCount = weakSelf.imagesURL.count;
             dispatch_async(dispatch_get_main_queue(), ^{
-                
+              
                 [weakSelf.collectionView reloadData];
             });
         };
