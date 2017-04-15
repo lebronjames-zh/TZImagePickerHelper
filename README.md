@@ -1,5 +1,5 @@
 # TZImagePickerHelper
-#喜欢请 Star
+#喜欢请 Star 你的支持将是我搬砖的动力，谢谢。
 
 一个对TZImagePickerController进行封装的工具TZImagePickerHelper。非常方便调用手机图片库和回调所选图片路径。
 三步集成
